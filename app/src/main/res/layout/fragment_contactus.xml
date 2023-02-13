@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_contactus"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".FragmentContactus">
+
+    <TextView
+        android:id="@+id/contact"
+        android:layout_width="327dp"
+        android:layout_height="130dp"
+        android:layout_marginLeft="30dp"
+        android:fontFamily="@font/tienne_bold"
+        android:gravity="center"
+        android:text="Interested to learn more?"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        tools:layout_editor_absoluteX="42dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/boder_myorange"
+        android:drawablePadding="10dp"
+        android:hint="Your Name *"
+        android:padding="12dp"
+        android:singleLine="true"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="220dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/boder_myorange"
+        android:drawablePadding="10dp"
+        android:hint="Work Email *"
+        android:padding="12dp"
+        android:singleLine="true"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/Phone"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="290dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/boder_myorange"
+        android:drawablePadding="10dp"
+        android:hint="Phone Number *"
+        android:padding="12dp"
+        android:singleLine="true"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/fb"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="360dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/boder_myorange"
+        android:gravity="top"
+        android:hint="Tell us why you'd like to be a UIT's cuisine innovation partner *"
+        android:padding="12dp"
+        android:singleLine="false"
+        android:textSize="20sp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:gravity="center"
+        android:layout_marginTop="600dp"
+        android:orientation="horizontal">
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/f_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:src="@drawable/f"
+            app:backgroundTint="#FFFFFF"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/g_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:src="@drawable/g"
+            app:backgroundTint="#FFFFFF"
+            tools:ignore="SpeakableTextPresentCheck" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/login_bt"
+        android:layout_width="123dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="530dp"
+        android:background="@drawable/button_gradient_orange"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:padding="0dp"
+        android:text="SUBMIT"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+</RelativeLayout>

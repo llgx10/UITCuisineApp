@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "898410277215",
+    "firebase_url": "https://uitcuisine-default-rtdb.firebaseio.com",
+    "project_id": "uitcuisine",
+    "storage_bucket": "uitcuisine.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:898410277215:android:b54df72b4606000e80eeea",
+        "android_client_info": {
+          "package_name": "com.example.uitscuisine"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "898410277215-b965ddhip7dsn9g1es48brioccvjsp8o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC8XjsOvqS_agJVW5whZYNY744EtlXCRN4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "898410277215-b965ddhip7dsn9g1es48brioccvjsp8o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

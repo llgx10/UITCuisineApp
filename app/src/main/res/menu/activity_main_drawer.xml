@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group
+        android:checkableBehavior="single">
+        <item android:id="@+id/nav_home"
+            android:title="@string/nav_myhome"
+            android:icon="@drawable/ic_home_24"/>
+        <item android:id="@+id/nav_myfavorite"
+            android:title="@string/nav_myfavorite"
+            android:icon="@drawable/ic_heart_24"/>
+        <item android:id="@+id/nav_shoppinglist"
+            android:title="@string/nav_shoppinglist"
+            android:icon="@drawable/ic_shopping_cart"/>
+    </group>
+    <group
+        android:checkableBehavior="single">
+    <item android:title="@string/nav_account">
+        <menu>
+            <item android:id="@+id/nav_myprofile"
+                android:title="@string/nav_myprofile"
+                android:icon="@drawable/ic_person_44"/>
+        </menu>
+    </item>
+    </group>
+    <item android:title="@string/nav_aboutapp">
+        <menu>
+            <item android:id="@+id/nav_aboutus"
+                android:title="@string/nav_aboutus"
+                android:icon="@drawable/ic_about_24"
+                />
+            <item android:id="@+id/nav_contactus"
+                android:title="@string/nav_contactus"
+                android:icon="@drawable/ic_baseline_phone_24"
+                />
+            <item android:id="@+id/nav_termofservice"
+                android:title="@string/nav_termsofservice"
+                android:icon="@drawable/ic_service_24"/>
+            <item android:id="@+id/nav_logout"
+                android:title="@string/nav_logout"
+                android:icon="@drawable/ic_logout_24"/>
+        </menu>
+    </item>
+</menu>

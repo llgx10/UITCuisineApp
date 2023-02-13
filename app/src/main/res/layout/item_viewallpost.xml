@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="400dp"
+    android:layout_height="400dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="2dp"
+    android:id="@+id/itemViewAllPost"
+    android:layout_gravity="center"
+    android:backgroundTint="@color/white">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="390dp"
+        android:layout_height="370dp"
+        android:id="@+id/posterAvatar"
+        android:layout_centerInParent="true"
+        android:background="@drawable/boder"
+        android:backgroundTint="@color/white"
+        android:foregroundGravity="clip_horizontal|center"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="2dp"
+        app:cardMaxElevation="3dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/boder"
+            android:backgroundTint="@color/white">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/viewAllAvatar"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="312dp"
+                android:layout_marginBottom="306dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/food8"
+                app:civ_border_color="@color/black" />
+
+            <ImageView
+                android:id="@+id/image_viewAll"
+                android:layout_width="370dp"
+                android:layout_height="200dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="73dp"
+                android:layout_marginEnd="0dp"
+                android:background="@drawable/boder"
+                android:scaleType="centerCrop"
+                android:src="@drawable/food7"
+                app:civ_border_color="@color/black" />
+
+            <com.example.uitscuisine.custom_textview.PoppinsMediumTextView
+                android:id="@+id/posterName"
+                android:layout_width="128dp"
+                android:layout_height="30dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="85dp"
+                android:layout_marginEnd="157dp"
+                android:layout_marginBottom="321dp"
+                android:text="Quang Vu"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <com.example.uitscuisine.custom_textview.PoppinsMediumTextView
+                android:id="@+id/name_viewAll"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="282dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginBottom="49dp"
+                android:gravity="center"
+                android:paddingTop="3dp"
+                android:text="Korean Noodles"
+                android:textColor="@color/myOrange"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/recipeId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="299dp"
+                android:layout_marginTop="23dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="308dp"
+                android:text="Recipe ID"
+                android:textColor="@android:color/transparent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.example.uitscuisine.custom_textview.PoppinsMediumTextView
+                android:id="@+id/neededTime"
+                android:layout_width="90dp"
+                android:layout_height="35dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="324dp"
+                android:layout_marginEnd="267dp"
+                android:layout_marginBottom="14dp"
+                android:background="@drawable/custom_recipe_needed_time"
+                android:drawableLeft="@drawable/clock20"
+                android:gravity="center"
+                android:text="5h 33m"
+                android:textColor="#ffffff"
+                android:textSize="14sp" />
+
+            <com.example.uitscuisine.custom_textview.PoppinsMediumTextView
+                android:id="@+id/level"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="139dp"
+                android:layout_marginTop="326dp"
+                android:layout_marginEnd="165dp"
+                android:layout_marginBottom="14dp"
+                android:background="@drawable/custom_recipe_needed_time"
+                android:gravity="center"
+                android:text="Easy"
+                android:textColor="#ffffff"
+                android:textSize="14sp" />
+
+            <com.example.uitscuisine.custom_textview.PoppinsMediumTextView
+                android:id="@+id/category"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="240dp"
+                android:layout_marginTop="326dp"
+                android:layout_marginEnd="34dp"
+                android:layout_marginBottom="14dp"
+                android:background="@drawable/custom_recipe_needed_time"
+                android:gravity="center"
+                android:text="Việt Nam"
+                android:textColor="#ffffff"
+                android:textSize="14sp" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

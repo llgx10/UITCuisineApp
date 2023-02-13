@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="16dp">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/titleImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/borderImage"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <com.example.uitscuisine.custom_textview.PoppinsMediumTextView
+        android:drawableLeft="@drawable/clock20"
+        android:id="@+id/neededTime"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_marginBottom="-16dp"
+        android:background="@drawable/custom_recipe_needed_time"
+        android:gravity="center"
+        android:text="5h 33m"
+        android:textColor="#ffffff"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/titleImage"
+        app:layout_constraintEnd_toEndOf="@+id/titleImage"
+        app:layout_constraintStart_toStartOf="@+id/titleImage" />
+
+    <com.example.uitscuisine.custom_textview.PoppinsMediumTextView
+        android:id="@+id/level"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="6dp"
+        android:gravity="center"
+        android:text="Easy"
+        android:textAllCaps="true"
+        android:textColor="#F59B08"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/titleImage"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.example.uitscuisine.custom_textview.PoppinsMediumTextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:gravity="center"
+        android:text="Asian noodle"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/titleImage"
+        app:layout_constraintTop_toBottomOf="@+id/level" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/posterAvatar"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="16dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_launcher"
+        app:layout_constraintStart_toEndOf="@+id/titleImage"
+        app:layout_constraintTop_toBottomOf="@+id/titleText"
+        app:shapeAppearanceOverlay="@style/borderAvatar" />
+
+    <com.example.uitscuisine.custom_textview.PoppinsMediumTextView
+        android:id="@+id/posterName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:text="Poster's name"
+        android:textColor="#F59B08"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/posterAvatar"
+        app:layout_constraintTop_toBottomOf="@+id/titleText" />
+
+    <TextView
+        android:textColor="@android:color/transparent"
+        android:id="@+id/recipeId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="36dp"
+        android:text="Recipe ID"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

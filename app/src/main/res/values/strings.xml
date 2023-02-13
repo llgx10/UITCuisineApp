@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">UIT\'sCuisine</string>
+    <string name="sign_up"><u>Sign Up</u></string>
+    <string name="log_in"><u>LOG IN</u></string>
+    <string name="action_home">HOME</string>
+    <string name="action_category">CATEGORY</string>
+    <string name="action_add_recipe">RECIPE</string>
+    <string name="action_shopping">SHOPPING LIST</string>
+    <string name="action_account">ACCOUNT</string>
+    <string name="action_setting">SETTING</string>
+    <string name="action_planner">PLANNER</string>
+
+    <string-array name="gender">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Others</item>
+    </string-array>
+
+    <string name="nav_myhome">My Home</string>
+    <string name="nav_myfavorite">My Favorite</string>
+    <string name="nav_shoppinglist">My Shopping List</string>
+    <string name="nav_account">Account</string>
+    <string name="nav_myprofile">My Profile</string>
+    <string name="nav_editprofile">Edit Profile</string>
+    <string name="nav_aboutapp">About App</string>
+    <string name="nav_aboutus">About Us</string>
+    <string name="nav_contactus">Contact Us</string>
+    <string name="nav_termsofservice">Terms of Service</string>
+    <string name="nav_logout">logout</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="title_activity_account_home">AccountHome</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="fb_login_protocol_scheme">fb399930575206507</string>
+    <string name="facebook_client_token">da80c0c93e309054c4f56d0cb12e5eba</string>
+    <string name="facebook_app_id">399930575206507</string>
+
+    <string-array name="category_items">
+        <item>VietNam</item>
+        <item>Chinese</item>
+        <item>Korea</item>
+        <item>Japan</item>
+        <item>Thailand</item>
+    </string-array>
+
+    <string-array name="difficulty_items">
+        <item>Hard</item>
+        <item>Medium</item>
+        <item>Easy</item>
+    </string-array>
+</resources>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:id="@+id/nav_termofservice"
+    tools:context=".FragmentTermofservice">
+
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="272dp"
+        android:layout_height="59dp"
+        android:layout_gravity="left"
+        android:layout_marginBottom="21dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="60dp"
+        android:fontFamily="@font/tienne_bold"
+        android:gravity="center"
+        android:text="UIT's Cuisine"
+        android:textColor="#F59B08"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/terms"
+        android:layout_width="272dp"
+        android:layout_height="59dp"
+        android:layout_gravity="left"
+        android:layout_marginBottom="21dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="60dp"
+        android:fontFamily="@font/tienne_bold"
+        android:gravity="center"
+        android:text="Terms"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/settingImage"
+        android:layout_width="64dp"
+        android:layout_height="62dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/logo2" />
+
+    <com.example.uitscuisine.custom_textview.PoppinsMediumTextView
+        android:id="@+id/other"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="120dp"
+        android:text="What do these terms cover?"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/settingIcon" />
+
+    <com.example.uitscuisine.custom_textview.PoppinsLightTextView
+        android:id="@+id/nd"
+        android:layout_width="wrap_content"
+        android:layout_height="71dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="160dp"
+        android:layout_marginEnd="15dp"
+        android:text="These use terms and the documents referred to in them govern:"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/other" />
+
+    <com.example.uitscuisine.custom_textview.PoppinsLightTextView
+        android:id="@+id/nd1"
+        android:layout_width="wrap_content"
+        android:layout_height="278dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="240dp"
+        android:layout_marginEnd="15dp"
+        android:text="Your access to and use of our services through Your Account with us, including all functionality on our Site at Uitscuisine.com, buttons, browser plugins,application programing interfaces, and accessing functionality on third parties who have integrated them into their experience "
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nd" />
+    <com.example.uitscuisine.custom_textview.PoppinsMediumTextView
+        android:id="@+id/other1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="510dp"
+        android:text="Viruses, hacking, and other offences"
+        android:textSize="20sp"
+        android:textColor="#000000"/>
+    <com.example.uitscuisine.custom_textview.PoppinsLightTextView
+        android:id="@+id/nd2"
+        android:layout_width="wrap_content"
+        android:layout_height="278dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="550dp"
+        android:layout_marginEnd="15dp"
+        android:text="You are responsible for configuring Your Systems in order to access our Site. We recommend that you use your own virus protection software."
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nd" />
+
+</FrameLayout>

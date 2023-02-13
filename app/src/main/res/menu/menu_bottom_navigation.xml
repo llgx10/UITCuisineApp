@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/actionHome"
+        android:title="@string/action_home"
+        android:icon="@drawable/home24" />
+    <item
+        android:id="@+id/actionCategory"
+        android:title="@string/action_category"
+        android:icon="@drawable/grid24"/>
+    <item
+        android:id="@+id/actionAddRecipe"
+        android:title="@string/action_add_recipe"
+        android:icon="@drawable/add24"/>
+    <item
+        android:id="@+id/actionCuisine"
+        android:icon="@drawable/globe24"
+        android:title="@string/action_shopping" />
+    <item
+        android:id="@+id/actionAccount"
+        android:title="@string/action_account"
+        android:icon="@drawable/user24"/>
+</menu>

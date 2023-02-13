@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/white">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="32dp"
+            android:paddingTop="32dp"
+            android:background="@color/white">
+
+            <com.example.uitscuisine.custom_textview.PoppinsBoldTextView
+                android:id="@+id/textView9"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:text="Add Your Recipe"
+                android:textColor="@color/myOrange"
+                android:textSize="24dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:paddingTop="16dp"
+                android:id="@+id/postRecipeNameEdt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="-18dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/custom_edit_text"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="@color/myGray"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/postRecipeName" />
+
+            <TextView
+                android:id="@+id/postRecipeName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:background="@color/white"
+                android:padding="10dp"
+                android:text="Recipe Name *"
+                android:textColor="@color/myGray"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/addRecipeImage" />
+
+            <EditText
+                android:paddingTop="16dp"
+                android:textColor="@color/myGray"
+                android:id="@+id/postServesEdt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="-18dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/custom_edit_text"
+                android:ems="10"
+                android:inputType="number"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/postServes" />
+
+            <TextView
+                android:textColor="@color/myGray"
+                android:padding="10dp"
+                android:background="@color/white"
+                android:id="@+id/postServes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:text="Serves *"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/postRecipeNameEdt" />
+
+            <EditText
+                android:focusable="false"
+                android:id="@+id/postDurationEdt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="-18dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/custom_edit_text"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:paddingTop="16dp"
+                android:textColor="@color/myGray"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/postDuration" />
+
+            <TextView
+                android:textColor="@color/myGray"
+                android:id="@+id/postDuration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:background="@color/white"
+                android:padding="10dp"
+                android:text="Duration *"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/postServesEdt" />
+
+            <Spinner
+                android:id="@+id/postDifficultyEdt"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="-18dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/custom_category_spinner"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:paddingTop="16dp"
+                android:textColor="@color/myGray"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/postDifficulty" />
+
+            <TextView
+                android:textColor="@color/myGray"
+                android:id="@+id/postDifficulty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:background="@color/white"
+                android:padding="10dp"
+                android:text="Difficulty *"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/postDurationEdt" />
+
+            <Spinner
+                android:id="@+id/postCategoryEdt"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="-18dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/custom_category_spinner"
+                android:paddingTop="16dp"
+                android:textColor="@color/myGray"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/postCategory" />
+
+            <TextView
+                android:textColor="@color/myGray"
+                android:id="@+id/postCategory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:background="@color/white"
+                android:padding="10dp"
+                android:text="Category *"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/postDifficultyEdt" />
+
+            <EditText
+                android:paddingTop="16dp"
+                android:textColor="@color/myGray"
+                android:maxLength="2000"
+                android:maxLines="4"
+                android:id="@+id/postIngredientsEdt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="-18dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/custom_edit_text"
+                android:ems="10"
+                android:inputType="textCapSentences|textMultiLine"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/postIngredients" />
+
+            <TextView
+                android:textColor="@color/myGray"
+                android:id="@+id/postIngredients"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:background="@color/white"
+                android:padding="10dp"
+                android:text="Ingredients *"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/postCategoryEdt" />
+
+            <EditText
+                android:paddingTop="16dp"
+                android:textColor="@color/myGray"
+                android:maxLength="4000"
+                android:maxLines="20"
+                android:id="@+id/postStepsEdt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="-18dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/custom_edit_text"
+                android:ems="20"
+                android:inputType="textCapSentences|textMultiLine"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/postSteps" />
+
+            <TextView
+                android:textColor="@color/myGray"
+                android:id="@+id/postSteps"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:background="@color/white"
+                android:padding="10dp"
+                android:text="Steps *"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/postIngredientsEdt" />
+
+            <Button
+                android:id="@+id/addRecipeButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/custom_button"
+                android:text="Add Recipe"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/postStepsEdt" />
+
+            <ImageView
+                android:background="@drawable/custom_shadow_rect"
+                android:id="@+id/addRecipeImage"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_marginTop="16dp"
+                android:scaleType="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView9"
+                app:srcCompat="@drawable/addimage48" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
